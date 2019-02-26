@@ -1,6 +1,6 @@
 # browser_forensics
 
-![](https://img.shields.io/github/license/niftycode/browser_forensics.svg?style=flat) ![](https://img.shields.io/badge/python-3.6%20%7C%203.7-blue.svg) ![](https://img.shields.io/github/last-commit/niftycode/browser_forensics.svg?style=flat) ![](https://img.shields.io/github/commit-activity/m/niftycode/browser_forensics.svg?style=flat) ![](https://img.shields.io/github/issues/niftycode/browser_forensics.svg?style=flat)
+![](img/license-MIT-green.svg) ![](https://img.shields.io/badge/python-3.6%20%7C%203.7-blue.svg) ![](https://img.shields.io/github/last-commit/niftycode/browser_forensics.svg?style=flat) ![](https://img.shields.io/github/commit-activity/m/niftycode/browser_forensics.svg?style=flat) ![](https://img.shields.io/github/issues/niftycode/browser_forensics.svg?style=flat)
 
 This is a forensic tool written in Python 3. Use this tool to  fetch the content of the *history* file (Firefox, Chrome and Safari) on macOS and Windows 10 operating systems.
 

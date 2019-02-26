@@ -4,3 +4,4 @@
 /build
 /dist
 /src/browser_forensics.egg-info
+.DS_Store
