@@ -43,6 +43,7 @@ on UNIX-like systems.
 * Add list with installed browsers
 * Add Linux support
 * Add data export (CSV, JSON, Excel?)
+* Add more Unit Tests
 
 ## Changelog
 
