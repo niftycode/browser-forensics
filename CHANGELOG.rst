@@ -13,3 +13,8 @@ CHANGELOG
 ---
 
 - 03.12.2018: Added support for the Safari browser.
+
+1.2.1
+---
+
+- 15.02.2019: Added tests
