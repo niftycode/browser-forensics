@@ -11,21 +11,51 @@ Date created: 31.10.2018
 
 import os
 import sys
-import common_methods
+from browser_forensics import common_methods
 
 
 def fetch_db_data():
     """
     Check the current operating system.
-    Invoke the functions that check the database path and
-    read the database file.
+    Invoke the functions that check the database path,
+    read the database file and
+    print the data.
     """
     os_version = common_methods.system_info()
     history_file = 'places.sqlite'
     db = firefox_db_path(os_version, history_file)
     print("The path to the database is: {}".format(db))
     print()
-    read_history(db)
+    history_data = read_history(db)
+
+    print("Show the id, the URL and the last visit date:")
+
+    for line in history_data:
+
+        (place_id, url, title, rev_host, visit_count, hidden, typed, frecency, last_visit_date,
+         guid, foreign_count, url_hash, description, preview_image_url, origin_id) = line
+
+        """
+        print("#########################################")
+        print(place_id)
+        print(url)
+        print(title)
+        print(rev_host)  # str
+        print(visit_count)  # int
+        print(hidden)  # int
+        print(typed)  # int
+        print(frecency)  # int
+        print(last_visit_date)  # int
+        print(guid)  # str
+        print(foreign_count)  # int
+        print(url_hash)  # int
+        print(description)  # str
+        print(preview_image_url)  # str
+        print(origin_id)  # int
+        print("#########################################")
+        """
+        date = common_methods.convert_epoch(last_visit_date)
+        print(str(place_id) + "\t" + url + "\t\t" + str(date))
 
 
 def firefox_db_path(operating_system, db_file):
@@ -81,29 +111,4 @@ def read_history(history_db):
 
     sql_command = "SELECT * FROM moz_places"
     rval = common_methods.fetch_db_data(history_db, sql_command)
-
-    print("Show the id, the URL and the last visit date:")
-
-    for line in rval:
-        (place_id, url, title, rev_host, visit_count, hidden, typed, frecency, last_visit_date,
-         guid, foreign_count, url_hash, description, preview_image_url, origin_id) = line
-
-        print("###############################")
-        print(place_id)
-        print(url)
-        print(title)
-        print(rev_host)  # str
-        print(visit_count)  # int
-        print(hidden)  # int
-        print(typed)  # int
-        print(frecency)  # int
-        print(last_visit_date)  # int
-        print(guid)  # str
-        print(foreign_count)  # int
-        print(url_hash)  # int
-        print(description)  # str
-        print(preview_image_url)  # str
-        print(origin_id)  # int
-        print("###############################")
-        # date = common_methods.convert_epoch(last_visit_date)
-        # print(str(place_id) + "\t" + url + "\t\t" + str(date))
+    return rval

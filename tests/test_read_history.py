@@ -6,7 +6,6 @@ import pytest
 import sqlite3
 import os
 from browser_forensics import firefox_data
-# from browser_forensics import common_methods
 
 
 @pytest.fixture(scope='function')
@@ -16,12 +15,9 @@ def initialize_firefox_db(tmpdir):
     cur = conn.cursor()
 
     cur.executescript('''
-    DROP TABLE IF EXISTS History;
+    DROP TABLE IF EXISTS moz_places;
 
-    # (place_id, url, title, rev_host, visit_count, hidden, typed, frecency, last_visit_date,
-         guid, foreign_count, url_hash, description, preview_image_url, origin_id)
-
-    CREATE TABLE Urls (
+    CREATE TABLE moz_places (
     place_id     INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE,
     url   TEXT UNIQUE,
     title    TEXT UNIQUE,
@@ -40,7 +36,7 @@ def initialize_firefox_db(tmpdir):
     );
     ''')
 
-    cur.execute('''INSERT OR IGNORE INTO History(place_id, url, title, rev_host, visit_count,
+    cur.execute('''INSERT OR IGNORE INTO moz_places(place_id, url, title, rev_host, visit_count,
         hidden, typed, frecency, last_visit_date, guid, foreign_count, url_hash, description,
         preview_image_url, origin_id)
         VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)''', (20, 'https://google.com', 'Google',
@@ -54,8 +50,6 @@ def initialize_firefox_db(tmpdir):
 
 
 def test_firefox_db(initialize_firefox_db):
-    command = "SELECT * FROM urls"
-    rval = firefox_data.read_history(initialize_firefox_db, command)
-    assert rval == [(20, 'https://google.com', 'Google',
-        'ed.esieh.www.', 1, 0, 0, 2000, 1551173630212966, 'rlmKqPTvlzYv', 0, 47359477497507, 'Google Search',
+    rval = firefox_data.read_history(initialize_firefox_db)
+    assert rval == [(20, 'https://google.com', 'Google', 'ed.esieh.www.', 1, 0, 0, 2000, 1551173630212966, 'rlmKqPTvlzYv', 0, 47359477497507, 'Google Search',
         'https://google.com/test.png', 11)]

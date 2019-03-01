@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 setup(
     name='browser_forensics',
     version='1.2.1',
-    license='MIT', 
+    license='MIT',
     description='Analyze the history file of browsers',
 
     author='Bodo Schönfeld',
