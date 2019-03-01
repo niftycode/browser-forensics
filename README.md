@@ -17,20 +17,20 @@ This is a forensic tool written in Python 3. Use this tool to  fetch the content
 
 ## Usage
 
-Start the program with
+Change to the *browser_forensics* directory and start the program with
 
     # Chrome browser
-    python browser_forensic.py -c
+    python main.py -c
 
 or
 
     # Firefox browser
-    python browser_forensic.py -f
+    python main.py -f
 
 or
 
     # Safari browser
-    python browser_forensic.py -s
+    python main.py -s
 
 Since this is a program written in Python 3 you may use
 
