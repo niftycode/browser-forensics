@@ -10,8 +10,10 @@ setup(
     author_email='python@niftycode.de',
     url='https://github.com/niftycode/browser_forensics',
 
-    packages=find_packages(where='src'),
-    package_dir={'': 'src'},
+    #packages=find_packages(where='src'),
+    #package_dir={'': 'src'},
+    packages=['browser_forensics'],
+    #package_dir={'': 'browser_forensics'},
 
     install_requires=['pytest'],
     tests_require=['pytest'],

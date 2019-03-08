@@ -1,0 +1,13 @@
+README.md
+setup.py
+browser_forensics/__init__.py
+browser_forensics/chrome_data.py
+browser_forensics/common_methods.py
+browser_forensics/firefox_data.py
+browser_forensics/main.py
+browser_forensics/safari_data.py
+browser_forensics.egg-info/PKG-INFO
+browser_forensics.egg-info/SOURCES.txt
+browser_forensics.egg-info/dependency_links.txt
+browser_forensics.egg-info/requires.txt
+browser_forensics.egg-info/top_level.txt

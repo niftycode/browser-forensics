@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: browser-forensics
+Version: 1.2.1
+Summary: Analyze the history file of browsers
+Home-page: https://github.com/niftycode/browser_forensics
+Author: Bodo Schönfeld
+Author-email: python@niftycode.de
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
