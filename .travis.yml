@@ -8,3 +8,6 @@ script:
   - pytest
 notifications:
   email: true
+branches:
+  only:
+    - master

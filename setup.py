@@ -7,13 +7,13 @@ setup(
     description='Analyze the history file of browsers',
 
     author='Bodo Schönfeld',
-    author_email='python@niftycode.de',
+    author_email='bodo.schoenfeld@niftycode.de',
     url='https://github.com/niftycode/browser_forensics',
 
-    #packages=find_packages(where='src'),
-    #package_dir={'': 'src'},
-    packages=['browser_forensics'],
-    #package_dir={'': 'browser_forensics'},
+    packages=find_packages(where='src'),
+    package_dir={'': 'src'},
+    # packages=['browser_forensics'],
+    # package_dir={'': 'browser_forensics'},
 
     install_requires=['pytest'],
     tests_require=['pytest'],
