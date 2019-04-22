@@ -11,7 +11,7 @@ Date created: 14.11.2018
 
 import os
 import sys
-import common_methods
+from browser_forensics import common_methods
 
 
 def fetch_db_data():

@@ -7,15 +7,16 @@ The main file with the entry point for this program.
 Python 3.7
 Author: niftycode
 Date created: 28.10.2018
+Date edited: 22.04.2019
 """
 
 import argparse
 import sys
-import chrome_data
-import firefox_data
-import safari_data
+from browser_forensics import chrome_data
+from browser_forensics import firefox_data
+from browser_forensics import safari_data
 
-VERSION = '1.2.1'
+VERSION = '1.2.2'
 
 # TODO December 08, 2018: Add type annotations
 
@@ -68,7 +69,7 @@ def main():
 if __name__ == '__main__':
     print('\n\n    ##### A Python script to analyze browser data #####')
     print('    #               Created by niftycode              #')
-    print('    #                  Version 1.2.1                  #')
+    print('    #                  Version 1.2.2                  #')
     print('    ###################################################\n\n')
     print()
     main()
