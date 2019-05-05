@@ -67,7 +67,7 @@ def main():
 
 
 if __name__ == '__main__':
-    print('\n\n    ##### A Python script to analyze browser data #####')
+    print('\n\n    #### A Python script to analyze browser data ####')
     print('    #               Created by niftycode              #')
     print('    #                  Version 1.2.2                  #')
     print('    ###################################################\n\n')
