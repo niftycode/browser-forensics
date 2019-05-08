@@ -12,6 +12,7 @@ Date created: 14.11.2018
 import os
 import sys
 from browser_forensics import common_methods
+from browser_forensics import show_help_image
 
 
 def fetch_db_data():
@@ -27,26 +28,29 @@ def fetch_db_data():
         print("Safari's history file is only on macOS available.")
         sys.exit()
 
-    print("You have to copy the 'History.db' file to your 'Documents' folder.")
-    print("To do this use 'cp ~/Library/Safari/History.db ~/Documents' in the Terminal.")
+    print("Your Terminal application needs full disc access to read Safari's database file.")
+    print("You can add this access in the 'Secure & Privacy' section.")
+    print()
+    answer = input("Do you need additional help? (y/N): ")
+    print("answer = ", answer)
 
-    answer = input("Did you copy the History.db file? (y/N): ")
-
-    if answer is 'y':
+    if answer == 'n' or ' ':
         db = safari_db_path(history_file)
         print()
         print("The path to the database is: {}".format(db))
         print()
         read_history(db)
     else:
+        show_help_image.show_image()
         print()
-        print("Copy the 'History.db' file to your 'Documents' folder end restart the program.")
+        print("Add full disk access as shown in the image and restart.")
+        print()
         sys.exit()
 
 
 def safari_db_path(db_file):
 
-    default_path = '/Users/{0}/Documents/'.format(os.getlogin())
+    default_path = '/Users/{0}/Library/Safari/'.format(os.getlogin())
 
     # Create the full path to the db file and return this path.
     if os.path.isfile(os.path.join(default_path, db_file)):
