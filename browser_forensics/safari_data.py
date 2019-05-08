@@ -29,7 +29,7 @@ def fetch_db_data():
         sys.exit()
 
     print("Your Terminal application needs full disc access to read Safari's database file.")
-    print("You can add this access in the 'Secure & Privacy' section.")
+    print("You can add this access in the 'Secure & Privacy' section of your System Preferences.")
     print()
     answer = input("Do you need additional help? (y/N): ")
 
