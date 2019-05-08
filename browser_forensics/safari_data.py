@@ -32,7 +32,6 @@ def fetch_db_data():
     print("You can add this access in the 'Secure & Privacy' section.")
     print()
     answer = input("Do you need additional help? (y/N): ")
-    print("answer = ", answer)
 
     if answer == 'n' or ' ':
         db = safari_db_path(history_file)
@@ -46,6 +45,7 @@ def fetch_db_data():
         print("Add full disk access as shown in the image and restart.")
         print()
         sys.exit()
+        # TODO - 08.05.2019: Add a conf file with default value.
 
 
 def safari_db_path(db_file):

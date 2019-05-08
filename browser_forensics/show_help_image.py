@@ -3,10 +3,10 @@
 
 
 """
-safari_data.py
+show_help_image.py
 Fetch data from the Safari browser.
 Python 3.7
-Date created: 14.11.2018
+Date created: 09.05.2019
 """
 
 from PIL import Image
