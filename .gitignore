@@ -1,6 +1,6 @@
 /.DS_Store
 /.idea
-# /.pytest_cache
+
 
 /build
 /dist
@@ -9,3 +9,4 @@
 .DS_Store
 *.pyc
 .pytest_cache
+.vscode
