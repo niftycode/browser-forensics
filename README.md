@@ -20,17 +20,17 @@ This is a forensic tool written in Python 3. Use this tool to  fetch the content
 Change to the *browser_forensics* directory and start the program with
 
     # Chrome browser
-    python main.py -c
+    python browser_forensics.py -c
 
 or
 
     # Firefox browser
-    python main.py -f
+    python browser_forensics.py -f
 
 or
 
     # Safari browser
-    python main.py -s
+    python browser_forensics.py -s
 
 Since this is a program written in Python 3 you may use
 
@@ -50,3 +50,4 @@ on UNIX-like systems.
 * **10.11.2018**, *Version 1.1.0*: This version supports Chrome and Firefox on macOS and Windows 10.
 * **03.12.2018**, *Version 1.2.0*: Added support for the Safari browser.
 * **25.02.2019**, *Version 1.2.1*: Added tests
+* **20.05.2019**, Version 1.2.2*: Fixed bugs
