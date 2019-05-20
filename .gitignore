@@ -1,6 +1,6 @@
 /.DS_Store
 /.idea
-/.pytest_cache
+# /.pytest_cache
 
 /build
 /dist
@@ -8,4 +8,4 @@
 /browser_forensics.egg-info
 .DS_Store
 *.pyc
-/.pytest_cache/v/cache/nodeids
+# /.pytest_cache/v/cache/nodeids
