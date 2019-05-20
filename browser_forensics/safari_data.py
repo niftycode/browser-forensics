@@ -35,14 +35,12 @@ def fetch_db_data():
     answer = input("Do you need additional help? (y/N): ")
 
     if answer == 'y':
-        print("Should show help image.")
         show_help_image.show_image()
         print()
         print("Add full disk access as shown in the image and restart.")
         print()
         sys.exit()
     else:
-        print("Should read the database.")
         db = safari_db_path(history_file)
         print()
         print("The path to the database is: {}".format(db))
