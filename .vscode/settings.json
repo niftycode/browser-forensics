@@ -1,9 +1,0 @@
-{
-    "python.testing.pyTestArgs": [
-        "tests"
-    ],
-    "python.testing.unittestEnabled": false,
-    "python.testing.nosetestsEnabled": false,
-    "python.testing.pyTestEnabled": true,
-    "python.pythonPath": "/Library/Frameworks/Python.framework/Versions/3.7/bin/python3"
-}

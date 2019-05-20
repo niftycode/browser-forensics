@@ -50,4 +50,4 @@ on UNIX-like systems.
 * **10.11.2018**, *Version 1.1.0*: This version supports Chrome and Firefox on macOS and Windows 10.
 * **03.12.2018**, *Version 1.2.0*: Added support for the Safari browser.
 * **25.02.2019**, *Version 1.2.1*: Added tests
-* **20.05.2019**, Version 1.2.2*: Fixed bugs
+* **20.05.2019**, *Version 1.2.2*: Fixed bugs
