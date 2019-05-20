@@ -32,14 +32,20 @@ def fetch_db_data():
     print("You can add this access in the 'Secure & Privacy' section of your System Preferences.")
     print()
     answer = input("Do you need additional help? (y/N): ")
+    print()
+    print(answer)
+    print(type(answer))
 
     if answer == 'n' or ' ':
+        print("within if: ", answer)
+        print("Should read the database.")
         db = safari_db_path(history_file)
         print()
         print("The path to the database is: {}".format(db))
         print()
-        read_history(db)
+        # read_history(db)
     else:
+        print("Should show help image.")
         show_help_image.show_image()
         print()
         print("Add full disk access as shown in the image and restart.")
