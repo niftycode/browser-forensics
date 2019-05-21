@@ -55,7 +55,8 @@ def fetch_db_data():
         print("#########################################")
         """
         date = common_methods.convert_epoch(last_visit_date)
-        print(str(place_id) + "\t" + url + "\t\t" + str(date))
+        print(str(place_id) + "\n" + url + "\n" + str(date))
+        print()
 
 
 def firefox_db_path(operating_system, db_file):
