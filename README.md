@@ -15,6 +15,11 @@ This is a forensic tool written in Python 3. Use this tool to fetch the content 
 * Firefox
 * Safari
 
+## Requirements
+
+* pillow
+* pytest
+
 ## Usage
 
 Change to the *browser_forensics* directory and start the program with
