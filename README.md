@@ -60,3 +60,5 @@ on UNIX-like systems.
 * **03.12.2018**, *Version 1.2.0*: Added support for the Safari browser.
 * **25.02.2019**, *Version 1.2.1*: Added tests
 * **20.05.2019**, *Version 1.2.2*: Fixed bugs
+* **13.06.2019**, *Version 1.2.3*: Fetch only id and urls from the databases
+
