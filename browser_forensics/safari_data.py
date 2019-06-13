@@ -54,7 +54,7 @@ def fetch_db_data():
             weekly_visit_counts, autocimplete_triggers, should_recompute_derived_visit_counts, 
             visit_count_score) = line
 
-            print(str(id) + "\n" + url)
+            print(f"id: {id}\nURL: {url}")
             print()
 
 

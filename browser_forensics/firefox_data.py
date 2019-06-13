@@ -35,27 +35,9 @@ def fetch_db_data():
         (place_id, url, title, rev_host, visit_count, hidden, typed, frecency, last_visit_date,
          guid, foreign_count, url_hash, description, preview_image_url, origin_id) = line
 
-        """
-        print("#########################################")
-        print(place_id)
-        print(url)
-        print(title)
-        print(rev_host)  # str
-        print(visit_count)  # int
-        print(hidden)  # int
-        print(typed)  # int
-        print(frecency)  # int
-        print(last_visit_date)  # int
-        print(guid)  # str
-        print(foreign_count)  # int
-        print(url_hash)  # int
-        print(description)  # str
-        print(preview_image_url)  # str
-        print(origin_id)  # int
-        print("#########################################")
-        """
         date = common_methods.convert_epoch(last_visit_date)
-        print(str(place_id) + "\n" + url + "\n" + str(date))
+
+        print(f"id: {str(place_id)}\nURL: {url}\nDate: {str(date)}")
         print()
 
 

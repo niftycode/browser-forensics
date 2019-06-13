@@ -34,7 +34,14 @@ def fetch_db_data():
     db = chrome_db_path(os_version, history_file)
     print("The path to the database is: {}".format(db))
     print()
-    read_history(db)
+
+    history_data = read_history(db)
+
+    for line in history_data:
+        (id, url, title, visit_count, typed_count, last_visit_time, hidden) = line
+
+        print(f"id: {str(id)}\nURL: {url}")
+        print()
 
 
 def chrome_db_path(operating_system, db_file):
@@ -78,11 +85,13 @@ def chrome_db_path(operating_system, db_file):
 def read_history(history_db):
     """
     Read the history database file.
-    :param history_db: The name of the database file.
+    :param history_db: The name of the database file. 
     """
     sql_command = "SELECT * FROM urls"
     rval = common_methods.fetch_db_data(history_db, sql_command)
+    return rval
 
-    # TODO December 10, 2018: Show only the id, the url and the date
+    """
     for i in rval:
         print(i)
+    """

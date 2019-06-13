@@ -16,7 +16,7 @@ from browser_forensics import chrome_data
 from browser_forensics import firefox_data
 from browser_forensics import safari_data
 
-VERSION = '1.2.2'
+VERSION = '1.2.3'
 
 # TODO December 08, 2018: Add type annotations
 
@@ -69,7 +69,7 @@ def main():
 if __name__ == '__main__':
     print('\n\n    #### A Python script to analyze browser data ####')
     print('    #               Created by niftycode            #')
-    print('    #                  Version 1.2.2                #')
+    print(f'    #                  Version {VERSION}                #')
     print('    #################################################\n\n')
     print()
     main()
