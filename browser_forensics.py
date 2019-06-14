@@ -2,12 +2,11 @@
 # -*- coding: utf-8 -*-
 
 """
-main.py
+browser_forensics.py
 The main file with the entry point for this program.
 Python 3.7
 Author: niftycode
 Date created: 28.10.2018
-Date edited: 22.04.2019
 """
 
 import argparse
