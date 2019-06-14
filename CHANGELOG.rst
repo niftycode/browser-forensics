@@ -18,3 +18,13 @@ CHANGELOG
 ---
 
 - 15.02.2019: Added tests
+
+1.2.2
+---
+
+- 20.05.2019: Fixed Bugs
+
+1.2.3
+---
+
+- 13.06.2019: Fetch only id and urls from the databases.
