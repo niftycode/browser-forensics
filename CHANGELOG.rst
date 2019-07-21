@@ -28,3 +28,8 @@ CHANGELOG
 ---
 
 - 13.06.2019: Fetch only id and urls from the databases.
+
+1.2.4
+---
+
+- 21.07.2019: Add Linux support (Firefox).
