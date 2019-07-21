@@ -59,17 +59,17 @@ def firefox_db_path(operating_system, db_file):
 
     # Check the operating system
     if operating_system == 'Windows 7':
-        print('Sorry, this Windows 7 is currently not supported!')
+        sys.exit("Sorry, this os is currently not supported.")
     elif operating_system == 'Windows 8':
-        print('Sorry, this Windows 8 is currently not supported!')
+        sys.exit("Sorry, this os is currently not supported.")
     elif operating_system == 'Windows 10':
         profile_path = platform_paths['Windows 10']
     elif operating_system == 'Linux':
-        print('Sorry, this Windows 8 is currently not supported!')
+        profile_path = platform_paths['Linux']
     elif operating_system == 'macOS':
         profile_path = platform_paths['Darwin']
     else:
-        print('Error: Unknown Operating System!')
+        sys.exit("Error: Unknown Operating System!")
 
     # Try to find the x.default directory
     # in Firefox' Profiles folder.
@@ -91,7 +91,6 @@ def read_history(history_db):
     show the id, the url and the last visit date.
     :param history_db: The name of the database file.
     """
-
     sql_command = "SELECT * FROM moz_places"
     rval = common_methods.fetch_db_data(history_db, sql_command)
     return rval
