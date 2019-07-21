@@ -33,6 +33,8 @@ def get_parser():
                         help="Select the Firefox browser", action='store_true')
     parser.add_argument('-s', '--safari',
                         help="Select the Safari browser", action='store_true')
+    parser.add_argument('-o', '--output',
+                        help="Create output file", action='store_true')
     parser.add_argument(
         '-v', '--version', help="Displays the current version", action='store_true')
     args = parser.parse_args()
@@ -44,17 +46,21 @@ def evaluate(args):
     Evaluate the given arguments.
     :param args: User's input
     """
-    if args.chrome:
-        chrome_data.fetch_db_data()
-    elif args.firefox:
-        firefox_data.fetch_db_data()
-    elif args.safari:
-        safari_data.fetch_db_data()
-    elif args.version:
-        print('This is version {0}.'.format(VERSION))
-        print()
+
+    if not args.output:
+        if args.chrome:
+            chrome_data.fetch_db_data()
+        elif args.firefox:
+            firefox_data.fetch_db_data()
+        elif args.safari:
+            safari_data.fetch_db_data()
+        elif args.version:
+            print('This is version {0}.'.format(VERSION))
+            print()
+        else:
+            print("Missing argument! Type '-h' for available arguments.")
     else:
-        print("Missing argument! Type '-h' for available arguments.")
+        print("Argument '-o' selected.")
 
 
 def main():

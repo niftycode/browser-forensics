@@ -57,7 +57,8 @@ on UNIX-like systems.
 ## ToDo
 
 * Add list with installed browsers
-* Add Linux support
+* ~~Add Linux support~~
+* Add Chrome support (Linux)
 * Add data export (CSV, JSON, Excel?)
 * Add more Unit Tests
 
