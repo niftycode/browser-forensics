@@ -15,7 +15,7 @@ from browser_forensics import chrome_data
 from browser_forensics import firefox_data
 from browser_forensics import safari_data
 
-VERSION = '1.2.3'
+VERSION = '1.2.4'
 
 # TODO December 08, 2018: Add type annotations
 

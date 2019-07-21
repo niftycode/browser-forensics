@@ -8,6 +8,7 @@ This is a forensic tool written in Python 3. Use this tool to fetch the content 
 
 * macOS
 * Windows 10
+* Linux (Firefox)
 
 ## Supported Browser
 
@@ -19,6 +20,12 @@ This is a forensic tool written in Python 3. Use this tool to fetch the content 
 
 * pillow
 * pytest
+
+Use
+
+    pip3 install -r requirements.txt
+
+to install these packages.
 
 ## Usage
 
@@ -61,4 +68,4 @@ on UNIX-like systems.
 * **25.02.2019**, *Version 1.2.1*: Added tests
 * **20.05.2019**, *Version 1.2.2*: Fixed bugs
 * **13.06.2019**, *Version 1.2.3*: Fetch only id and urls from the databases
-
+* **21.07.2019**, *Version 1.2.4*: Add Linux support (Firefox)
