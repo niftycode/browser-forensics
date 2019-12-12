@@ -4,7 +4,7 @@
 """
 browser_forensics.py
 The main file with the entry point for this program.
-Python 3.7
+Python 3.7+
 Author: niftycode
 Date created: 28.10.2018
 """
@@ -47,20 +47,17 @@ def evaluate(args):
     :param args: User's input
     """
 
-    if not args.output:
-        if args.chrome:
-            chrome_data.fetch_db_data()
-        elif args.firefox:
-            firefox_data.fetch_db_data()
-        elif args.safari:
-            safari_data.fetch_db_data()
-        elif args.version:
-            print('This is version {0}.'.format(VERSION))
-            print()
-        else:
-            print("Missing argument! Type '-h' for available arguments.")
+    if args.chrome:
+        chrome_data.fetch_db_data()
+    elif args.firefox:
+        firefox_data.fetch_db_data()
+    elif args.safari:
+        safari_data.fetch_db_data()
+    elif args.version:
+        print('This is version {0}.'.format(VERSION))
+        print()
     else:
-        print("Argument '-o' selected.")
+        print("Missing argument! Type '-h' for available arguments.")
 
 
 def main():
