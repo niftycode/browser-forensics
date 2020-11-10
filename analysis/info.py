@@ -3,8 +3,8 @@
 
 
 """
-session.py
-Check the user's input
+info.py
 Python 3.7+
-Date created: 01.03.2020
+Date created: March 1st, 2020
+Date modified: -
 """

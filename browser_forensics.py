@@ -6,7 +6,8 @@ browser_forensics.py
 The main file with the entry point for this program.
 Python 3.7+
 Author: niftycode
-Date created: 28.10.2018
+Date created: October 28th, 2018
+Date modified: -
 """
 
 import argparse
