@@ -7,7 +7,7 @@
 /dist
 /browser_forensics/browser_forensics.egg-info
 /browser_forensics.egg-info
-# .DS_Store
+.DS_Store
 .pytest_cache
 .vscode
 *.pyc
