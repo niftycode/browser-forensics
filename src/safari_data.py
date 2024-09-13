@@ -11,8 +11,8 @@ Date created: 14.11.2018
 
 import os
 import sys
-from analysis import common_methods
-from analysis import show_help_image
+from src import common_methods
+from src import show_help_image
 
 
 def fetch_db_data():

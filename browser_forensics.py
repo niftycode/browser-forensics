@@ -7,22 +7,23 @@ The main file with the entry point for this program.
 Python 3.7+
 Author: niftycode
 Date created: October 28th, 2018
-Date modified: -
+Date modified: September 13th, 2024
 """
 
 import argparse
 import sys
-from analysis import chrome_data
-from analysis import firefox_data
-from analysis import safari_data
 
-VERSION = '1.2.4'
+from src import chrome_data
+from src import firefox_data
+from src import safari_data
+
+VERSION = '1.3.0'
 
 
 def get_parser():
     """
     The options the user can choose.
-    :return: The chosen option.
+    :return: The selected option.
     """
     parser = argparse.ArgumentParser("browser_forensic.py: \
     A tool for reading the browser's history file.\n")
