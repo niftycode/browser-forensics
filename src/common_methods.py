@@ -1,11 +1,10 @@
 #!/usr/bin/env python3
-# -*- coding: utf-8 -*-
 
 """
 chrome_data.py
 Common methods.
-Python 3.7
-Date created: 31.10.2018
+Python 3.7+
+Date created: October 31st, 2018
 """
 
 import sqlite3

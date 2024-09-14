@@ -1,12 +1,10 @@
 #!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-
 
 """
 chrome_data.py
 Fetch data from the Chrome browser.
-Python 3.7
-Date created: 22.10.2018
+Python 3.7+
+Date created: October 22nd, 2018
 """
 
 import os

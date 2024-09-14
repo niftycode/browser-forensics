@@ -5,8 +5,8 @@
 """
 safari_data.py
 Fetch data from the Safari browser.
-Python 3.7
-Date created: 14.11.2018
+Python 3.7+
+Date created: November 14th, 2018
 """
 
 import os
