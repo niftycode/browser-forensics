@@ -6,17 +6,24 @@ The main file with the entry point for this program.
 Python 3.7+
 Author: niftycode
 Date created: October 28th, 2018
-Date modified: September 13th, 2024
+Date modified: September 14th, 2024
 """
 
 import argparse
+import logging.config
 import sys
+
+from logging.config import fileConfig
 
 from src import chrome_data
 from src import firefox_data
 from src import safari_data
 
 VERSION = '1.3.0'
+
+# Add logger config
+fileConfig("logging.ini")
+logger = logging.getLogger()
 
 
 def get_parser():
