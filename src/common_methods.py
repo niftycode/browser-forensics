@@ -18,11 +18,11 @@ def system_info():
     Check the running operating system.
     :return: Operating system name (and Windows version).
     """
-    if platform.system() == 'Darwin':
-        return 'macOS'
-    elif platform.system() == 'Linux':
-        return 'Linux'
-    elif platform.system() == 'Windows':
+    if platform.system() == "Darwin":
+        return "macOS"
+    elif platform.system() == "Linux":
+        return "Linux"
+    elif platform.system() == "Windows":
         version = platform.system() + " " + platform.release()
         return version
 
@@ -45,9 +45,9 @@ def fetch_db_data(db, command):
 
 def convert_epoch(timestamp):
     """
-    Convert epoch to human readable date
+    Convert epoch to human-readable date
     :param timestamp: The epoch timestamp.
-    :return: The human readable date.
+    :return: The human-readable date.
     """
     try:
         rval = dt.fromtimestamp(timestamp / 1000000).ctime()
