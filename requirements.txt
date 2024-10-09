@@ -1,4 +1,8 @@
 #
 # Requirements without Version Specifiers
+setuptools
 pytest
-pillow
+Pillow
+flake8
+black
+mypy
