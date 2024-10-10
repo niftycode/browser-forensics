@@ -32,22 +32,22 @@ to install these packages.
 Change to the *browser_forensics* directory and start the program with
 
     # Firefox browser
-    python browser_forensics.py -b firefox
+    python browser_forensics.py -b Firefox
 
 Since this is a program written in Python 3 you may use
 
-    python3 browser_forensics.py -b firefox
+    python3 browser_forensics.py -b Firefox
 
 on UNIX-like systems.
 
 **Note**: Mac users need access to the *Library* folder in order to read the database files. You can add access (for *Terminal* or *iTerm*) in
 
-    > Settings > Security & Privacy > Privacy > Full Disk Access
+    > Settings > Security & Privacy > Full Disk Access
 
 ## ToDo
 
 * Add list with installed browsers
 * ~~Add Linux support~~
 * Add Chrome support (Linux)
-* Add data export (CSV, JSON, Excel?)
+* Add data export (CSV, JSON, Excel)
 * Add more Unit Tests
