@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 
-from browser_forensics import common_methods
+from src import common_methods
 
 
 def test_convert_epoch_is_equal():

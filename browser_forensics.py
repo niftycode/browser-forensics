@@ -15,11 +15,12 @@ import sys
 
 from logging.config import fileConfig
 
-from src import chrome_data
+# from src import chrome_data
 from src import firefox_data
-from src import safari_data
 
-VERSION = "1.3.0"
+# from src import safari_data
+
+VERSION = "1.3.1"
 
 # Add logger config
 fileConfig("logging.ini")
@@ -71,7 +72,7 @@ def evaluate(args):
     :param args: User's input
     """
 
-    output = False
+    # output = False
 
     if not args.output:
         if args.browser == "Chrome":
@@ -88,7 +89,8 @@ def evaluate(args):
         else:
             print("Missing argument! Type '-h' for available arguments.")
     else:
-        output = True
+        pass
+        # output = True
 
     """
     if not args.output:
